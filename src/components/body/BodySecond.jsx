@@ -1,11 +1,12 @@
 import React from "react";
+import { popular } from "../../anime-data/Data";
 
 const BodySecond = () => {
   return (
     <div className="flex flex-col gap-8 mt-10 ml-[20px] lg:ml-[90px] pb-10 text-white">
       <h1 className="font-bold text-2xl md:text-4xl"> Recommended for you </h1>
 
-      <div className="over flex gap-8 md:gap-10 overflow-x-scroll custom-scrollbar ">
+      <div className="flex gap-8 md:gap-10 overflow-x-scroll custom-scrollbar ">
         <div className="w-[300px]">
           <div className="w-[220px] h-[270px] sm:w-[250px] sm:h-[300px] md:w-[300px] md:h-[380px]">
             <img
@@ -19,7 +20,6 @@ const BodySecond = () => {
               <p className="text-lg font-bold">
                 Devil
                 <span className="text-xs font-normal text-zinc-300">
-                  
                   (SUB/DUB)
                 </span>
               </p>
@@ -32,113 +32,53 @@ const BodySecond = () => {
 
         <div className="flex flex-col">
           <div className="flex gap-8">
-            <div className="rounded-xl">
-              <div className="h-[200px] w-[180px] md:w-[220px] md:h-[280px]">
-                <img
-                  src="/one.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-md bg-red-200"
-                />
-              </div>
-              <div className="flex w-full">
-                <button className="flex-1 py-3 bg-[#B31B1B]">
-                  <p className="text-sm font-bold">Devil</p>
-                  <p className="text-[10px] text-zinc-400">ep 10/12</p>
-                </button>
+            {popular.map((popular,i) => (
+              <div key={i} className="rounded-xl">
+                <div className="h-[200px] w-[180px] md:w-[220px] md:h-[280px]">
+                  <img
+                    src={popular.imageUrl}
+                    alt=""
+                    className="w-full h-full object-cover rounded-t bg-red-200"
+                  />
+                </div>
+                <div className="flex w-full">
+                  <button className="flex-1 rounded-bl  flex flex-col items-center py-1 bg-[#B31B1B]">
+                    <p className="text-sm font-bold whitespace-nowrap w-[100px] overflow-hidden">{popular.animeName}</p>
+                    <p className="text-[10px] text-zinc-400">ep {popular.arrivedEpisodes}/{popular.totalEpisodes}</p>
+                  </button>
 
-                <button className="bg-[#FEB53C] text-sm p-3 font-bold">
-                  Watch Now
-                </button>
+                  <button className="bg-[#FEB53C] rounded-br text-sm p-3 font-bold">
+                    Watch Now
+                  </button>
+                </div>
               </div>
-            </div>
-
-            <div className="rounded-xl">
-              <div className="h-[200px] w-[180px] md:w-[220px] md:h-[280px]">
-                <img
-                  src="/two.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-md bg-red-200"
-                />
-              </div>
-              <div className="flex w-full">
-                <button className="flex-1 py-3 bg-[#B31B1B]">
-                  <p className="text-sm font-bold">Devil</p>
-                  <p className="text-[10px] text-zinc-400">ep 10/12</p>
-                </button>
-
-                <button className="bg-[#FEB53C] text-sm p-3 font-bold">
-                  Watch Now
-                </button>
-              </div>
-            </div>
-
-            <div className="rounded-xl">
-              <div className="h-[200px] w-[180px] md:w-[220px] md:h-[280px]">
-                <img
-                  src="/three.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-md bg-red-200"
-                />
-              </div>
-              <div className="flex w-full">
-                <button className="flex-1 py-3 bg-[#B31B1B]">
-                  <p className="text-sm font-bold">Devil</p>
-                  <p className="text-[10px] text-zinc-400">ep 10/12</p>
-                </button>
-
-                <button className="bg-[#FEB53C] text-sm p-3 font-bold">
-                  Watch Now
-                </button>
-              </div>
-            </div>
-            <div className="">
-              <div className="h-[200px] w-[180px] md:w-[220px] md:h-[280px]">
-                <img
-                  src="/next.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-md bg-red-200"
-                />
-              </div>
-              <div className="flex w-full">
-                <button className="flex-1 py-3 bg-[#B31B1B]">
-                  <p className="text-sm font-bold">Devil</p>
-                  <p className="text-[10px] text-zinc-400">ep 10/12</p>
-                </button>
-
-                <button className="bg-[#FEB53C] text-sm p-3 font-bold">
-                  Watch Now
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="flex gap-6 mt-10">
             <div className=" rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
-                <button className="h-full w-full backdrop-blur-[6px]">
-                    Season 1
-                </button>
+              <button className="h-full w-full backdrop-blur-[6px]">
+                Season 1
+              </button>
             </div>
 
             <div className="rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
-                <button className="h-full w-full backdrop-blur-[6px]">
-                    Season 2
-                </button>
-            </div>
-
-
-            <div className="rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
-                <button className="h-full w-full backdrop-blur-[6px]">
-                    Season 3
-                </button>
+              <button className="h-full w-full backdrop-blur-[6px]">
+                Season 2
+              </button>
             </div>
 
             <div className="rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
-                <button className="h-full w-full backdrop-blur-[6px]">
-                    Season 4
-                </button>
+              <button className="h-full w-full backdrop-blur-[6px]">
+                Season 3
+              </button>
             </div>
 
-    
+            <div className="rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
+              <button className="h-full w-full backdrop-blur-[6px]">
+                Season 4
+              </button>
+            </div>
           </div>
         </div>
       </div>
