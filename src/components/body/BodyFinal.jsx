@@ -65,12 +65,12 @@ const BodyFinal = () => {
   const top5Anime = anime.slice(0, 6);
 
   return (
-    <div className="px-[90px] gap-8 text-white box-border w-full flex">
-      <div className="flex-[3]  flex flex-col p-4 rounded-2xl bg-[#262C33]">
-        <div className="flex gap-10 flex-wrap">
+    <div className="px-[20px] lg:gap-8 gap-4 text-white box-border w-full flex flex-col md:flex-row">
+      <div className="flex-[2] md:flex-[3]  flex flex-col p-4 rounded-2xl bg-[#262C33]">
+        <div className="flex gap-10 flex-wrap justify-evenly items-center">
           {anime.map((anime, index) => (
             <div key={index} className="rounded-xl">
-              <div className="w-[200px] h-[240px]">
+              <div className="w-[150px] h-[200px] md:w-[200px] md:h-[240px]">
                 <img
                   src={anime.image}
                   alt=""
@@ -93,26 +93,26 @@ const BodyFinal = () => {
         </div>
       </div>
 
-      <div className="flex-1 p-4 box-border flex flex-col bg-[#262C33]">
+      <div className="flex-1 p-2 lg:p-4 box-border rounded-xl flex flex-col bg-[#262C33]">
         <h1 className="text-xl font-semibold">Most Popular</h1>
 
         <div className="flex flex-col mt-4 gap-8">
           {top5Anime.map((anime, index) => (
-            <div key={anime} className="flex gap-4 items-center justify-center">
-              <button className="border px-6 py-4">{index + 1}</button>
+            <div key={anime} className="flex  gap-2 lg:gap-4 items-center">
+              <button className="px-2 border hidden xl:flex md:px-6 md:py-4">{index + 1}</button>
 
               <img
                 src={anime.image}
                 alt=""
-                className="h-32 rounded-xl w-24 object-cover"
+                className="h-24 w-16 md:h-32 rounded-xl md:w-24 object-cover"
               />
 
               <div>
-                <button className="bg-[#FEB53C] px-2 py-1 rounded-xl">
+                <button className="bg-[#FEB53C] px-1 md:px-2 md:py-1 rounded-xl text-[12px]">
                   Sub/Dub
                 </button>
-                <p className="mt-2">ONE PIECE</p>
-                <p className="text-zinc-400 text-sm">Ep 1776.Tv</p>
+                <p className="mt-2 text-xs xl:text-xl">ONE PIECE</p>
+                <p className="text-zinc-400 text-[12px] lg:text-sm">Ep 1776.Tv</p>
               </div>
             </div>
           ))}
