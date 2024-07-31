@@ -4,7 +4,7 @@ import BodySecond from './BodySecond'
 import BodyFinal from './BodyFinal'
 const Body = () => {
   return (
-    <div className='pt-[80px]'>
+    <div className='pt-[60px] md:pt-[80px]'>
         <BodyTop/>
         <BodySecond/>
         <BodyFinal/>
