@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
   return (
-    <div className="fixed w-screen h-[60px] md:h-[80px] text-white bg-[#000000] flex items-center justify-between">
+    <div className="fixed z-10 w-screen h-[60px] md:h-[80px] text-white bg-[#000000] flex items-center justify-between">
       <div className="flex ml-[20px] gap-3">
         <h1 className="font-bold text-xl whitespace-nowrap md:text-3xl">
           Anime Plex

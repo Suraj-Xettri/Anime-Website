@@ -1,85 +1,27 @@
 import React from "react";
+import { newly } from "../../anime-data/Data";
 
 const BodyFinal = () => {
-  const anime = [
-    {
-      name: "Naruto",
-      image: "a.png",
-    },
-    {
-      name: "Naruto",
-      image: "b.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "c.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "d.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "e.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "f.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "g.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "h.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "a.png",
-    },
-    ,
-    {
-      name: "Naruto",
-      image: "g.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "h.png",
-    },
-
-    {
-      name: "Naruto",
-      image: "a.png",
-    },
-  ];
+  const anime = newly
 
   const top5Anime = anime.slice(0, 6);
 
   return (
-    <div className="px-[20px] lg:gap-8 gap-4 text-white box-border w-full flex flex-col md:flex-row">
-      <div className="flex-[2] md:flex-[3]  flex flex-col p-4 rounded-2xl bg-[#262C33]">
-        <div className="flex gap-10 flex-wrap justify-evenly items-center">
+    <div className="md:px-[20px] lg:gap-8 gap-4 text-white box-border w-full flex flex-col md:flex-row">
+      <div className="flex-[3] flex flex-col md:p-4 rounded-md md:bg-[#262C33]">
+        <div className="flex gap-3 flex-wrap justify-center items-center">
           {anime.map((anime, index) => (
-            <div key={index} className="rounded-xl">
-              <div className="w-[150px] h-[200px] md:w-[200px] md:h-[240px]">
+            <div key={index} className="md:rounded-t-sm">
+              <div className="w-[140px] h-[150px] md:w-[190px] md:h-[240px]">
                 <img
-                  src={anime.image}
+                  src={anime.imageUrl}
                   alt=""
-                  className="w-full h-full object-cover rounded-md bg-red-200"
+                  className="w-full h-full object-cover rounded-t-md bg-red-200"
                 />
               </div>
               <div className="flex w-full">
-                <button className=" w-full rounded-b-xl py-1 bg-[#B31B1B]">
-                  <p className="text-sm font-bold">{anime.name}</p>
+                <button className=" flex flex-col items-center justify-center w-full rounded-b-xl py-1 bg-[#B31B1B]">
+                  <p className="text-xs font-bold whitespace-nowrap w-[100px] md:w-[150px] overflow-hidden">{anime.name}</p>
                   <p className="text-[10px] text-zinc-400">ep 10/12</p>
                 </button>
               </div>
@@ -98,11 +40,11 @@ const BodyFinal = () => {
 
         <div className="flex flex-col mt-4 gap-8">
           {top5Anime.map((anime, index) => (
-            <div key={anime} className="flex  gap-2 lg:gap-4 items-center">
+            <div key={index} className="flex  gap-2 lg:gap-4 items-center">
               <button className="px-2 border hidden xl:flex md:px-6 md:py-4">{index + 1}</button>
 
               <img
-                src={anime.image}
+                src={anime.imageUrl}
                 alt=""
                 className="h-24 w-16 md:h-32 rounded-xl md:w-24 object-cover"
               />

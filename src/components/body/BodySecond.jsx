@@ -1,12 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
 import { popular } from "../../anime-data/Data";
+import { FaChevronCircleLeft } from "react-icons/fa";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const BodySecond = () => {
+
+  const scrollContainerRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      const newScrollLeft = Math.max(scrollContainerRef.current.scrollLeft - 230, 0);
+      scrollContainerRef.current.scrollTo({
+        left: newScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      const maxScrollLeft = scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth;
+      const newScrollLeft = Math.min(scrollContainerRef.current.scrollLeft + 230, maxScrollLeft);
+      scrollContainerRef.current.scrollTo({
+        left: newScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className="flex flex-col gap-8 mt-10 ml-[20px] lg:ml-[90px] pb-10 text-white">
+    <div className="relative flex flex-col gap-8 mt-10 ml-[20px] lg:ml-[90px] pb-10 text-white">
       <h1 className="font-bold text-2xl md:text-4xl"> Recommended for you </h1>
 
-      <div className="flex gap-8 md:gap-10 overflow-x-scroll custom-scrollbar ">
+      <FaChevronCircleLeft className="hidden md:block cursor-pointer absolute right-20 text-4xl" onClick={scrollLeft}/>
+      <FaArrowCircleRight className="hidden md:block cursor-pointer absolute right-5 text-4xl" onClick={scrollRight}/>
+
+      <div ref={scrollContainerRef} className="flex gap-8  md:gap-10 overflow-x-scroll custom-scrollbar mr-3 ">
         <div className="w-[300px]">
           <div className="w-[220px] h-[270px] sm:w-[250px] sm:h-[300px] md:w-[300px] md:h-[380px]">
             <img
@@ -54,7 +83,6 @@ const BodySecond = () => {
               </div>
             ))}
           </div>
-
           <div className="flex gap-6 mt-10">
             <div className=" rounded-2xl w-[150px] h-[70px] bg-[url('/next.png')] bg-no-repeat bg-cover bg-center ">
               <button className="h-full w-full backdrop-blur-[6px]">
@@ -82,6 +110,8 @@ const BodySecond = () => {
           </div>
         </div>
       </div>
+
+     
     </div>
   );
 };
