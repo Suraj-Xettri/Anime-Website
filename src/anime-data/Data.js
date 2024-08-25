@@ -85,114 +85,114 @@ export const popular = [
 export const newly = [
   {
     "name": "Attack on Titan: Final Season Part 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNTBjNmFjMGItYzA3MC00ZjFhLTk0ZTAtYzY2MDQwZDRmN2JhXkEyXkFqcGdeQXVyMTIxMDUyOTI@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://www.hindustantimes.com/ht-img/img/2023/04/10/1600x900/175229-attack-on-titan-webp-large_1681099848276_1681099859239_1681099859239.jpg",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 9.0
   },
   {
     "name": "Jujutsu Kaisen Season 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BM2NlYzE1MDktZjRiOC00OWQwLWE0NzgtNDRhZGIwMmI5ODFkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://pbs.twimg.com/media/Fr-5hl4WYAAPlza.jpg:large",
     "totalEpisodes": 24,
     "completedEpisodes": 24,
     "rating": 8.9
   },
   {
     "name": "Demon Slayer: Kimetsu no Yaiba – Entertainment District Arc",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNjM2YzY2MzItNzEyMC00ZjU4LTk5NjItZTBhMWQzNTJiZDk1XkEyXkFqcGdeQXVyMTIzMzc2NzQ2._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhXrbzfu9MwUeh1mi0gFxrt6AW40JQGnUNZA&s",
     "totalEpisodes": 11,
     "completedEpisodes": 11,
     "rating": 8.8
   },
   {
     "name": "My Hero Academia Season 6",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BM2RjYTMwNDMtYmU1NS00YmY2LWJiYzEtMWU5YTY4NjZiNjc4XkEyXkFqcGdeQXVyNTAwNzA1Nzc@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmN7mjEoNfKuyK40bNsscFqrHA2ERHYyd3IA&s",
     "totalEpisodes": 25,
     "completedEpisodes": 25,
     "rating": 8.7
   },
   {
     "name": "Tokyo Revengers: Christmas Showdown",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNTU0ZTBjNTktNmY4Ni00N2NjLWE2M2UtOGU5NTZiMzdmZDU3XkEyXkFqcGdeQXVyMTAwMDQ4MDg2._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUekInkrDmXoC05vdtNpjty_TSJKRcaAsCdw&s",
     "totalEpisodes": 13,
     "completedEpisodes": 13,
     "rating": 8.5
   },
   {
     "name": "One Piece",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjRmZDg4YTQtODAyZS00M2I2LWIwM2QtMjQ3NzA1NGM5M2JjXkEyXkFqcGdeQXVyNzM4NjE2NDE@._V1_UY268_CR87,0,182,268_AL_.jpg",
+    "imageUrl": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/onepiecebig.png",
     "totalEpisodes": 1000,
     "completedEpisodes": 1000,
     "rating": 8.6
   },
   {
     "name": "Chainsaw Man",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTg5ZTBjNjctYWI3OS00N2Y1LWI4ZGMtNTI3ZTI5NTcyYzRlXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/3b70d9f3c112faa30940bcc26f1cff98.jpg",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 8.7
   },
   {
     "name": "Spy x Family",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDc5NmI1MWEtZjJjYS00MjU0LWI0OGMtMzUxYzNmN2FkNmMxXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/095217fdb4f228410df09b18f151be28.jpe",
     "totalEpisodes": 25,
     "completedEpisodes": 25,
     "rating": 8.8
   },
   {
     "name": "86 Part 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BY2EyNjI5NjQtOWRlYy00YWI1LTg5NTgtMmVkZjU3Nzk3Y2JlXkEyXkFqcGdeQXVyNzQxNzEwNTU@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTA5NGVkMzYtODAzYi00YWQyLThhYzctZTQxNTM1NDY2YjU0XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 8.4
   },
   {
     "name": "To Your Eternity Season 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzAxYmM5NjMtYWE2My00MTMwLWI0NzAtYzJjYmVhZTJhODU5XkEyXkFqcGdeQXVyMTAwMDQ4MDg2._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c4/ToYourEternitySecondseason.jpg",
     "totalEpisodes": 20,
     "completedEpisodes": 20,
     "rating": 8.5
   },
   {
     "name": "Ranking of Kings",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BY2M5ZTRmYTktY2RjMi00ZTNhLTg3ODAtZjNlZjEzMjA4N2E1XkEyXkFqcGdeQXVyMTAwMDQ4MDg2._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfV5LPQJHs7vW0OW8nt3DtcnvuNCIMG1eKw&s",
     "totalEpisodes": 23,
     "completedEpisodes": 23,
     "rating": 8.9
   },
   {
     "name": "Mushoku Tensei: Jobless Reincarnation Part 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BODVmMGM3NDItNzIzMi00MTQxLTliODktMDNjNzkzODNkY2U1XkEyXkFqcGdeQXVyNzQxNDExNTI@._V1_UY268_CR9,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpjI87raiGeBznYw-U_99u2-XddH0_NIbew&s",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 8.7
   },
   {
     "name": "The Case Study of Vanitas Part 2",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzJmYmQxMGYtMDJiMC00ODZlLWFmZGUtOWRhMmI4OWY3YjM2XkEyXkFqcGdeQXVyMTAwMDQ4MDg2._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/efa8f160c660955cf5a510485cef6ea1.jpe",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 8.2
   },
   {
     "name": "Blue Period",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzU1M2MxZTAtZjQ3Ny00ZWFhLTlkM2QtM2EwNzFlMTVmZGRkXkEyXkFqcGdeQXVyMTEzMTI1Njk3._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvvWZu-YDj42Z8q_4Bn0XsWgguuwf0zG9ig&s",
     "totalEpisodes": 12,
     "completedEpisodes": 12,
     "rating": 7.9
   },
   {
     "name": "Platinum End",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMDI1M2NjZTItMzA5Yy00OGMwLWFlZjUtNTVkYmRlMzFmZDM3XkEyXkFqcGdeQXVyOTIxMDI1NzI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/a003327d23ee474087f40d5efa8afa2d.jpe",
     "totalEpisodes": 24,
     "completedEpisodes": 24,
     "rating": 6.5
   },
-  {
-    "name": "Komi Can't Communicate",
-    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTZiYzdmYWQtMTQzOS00MDE5LWE2MDAtYmJkOGUyNjRmZjU3XkEyXkFqcGdeQXVyMTAwMDQ4MDg2._V1_UY268_CR9,0,182,268_AL_.jpg",
-    "totalEpisodes": 12,
-    "completedEpisodes": 12,
-    "rating": 8.0
-  }
+  // {
+  //   "name": "Komi Can't Communicate",
+  //   "imageUrl": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781974737048/komi-cant-communicate-vol-25-9781974737048_hr.jpg",
+  //   "totalEpisodes": 12,
+  //   "completedEpisodes": 12,
+  //   "rating": 8.0
+  // }
 ]
